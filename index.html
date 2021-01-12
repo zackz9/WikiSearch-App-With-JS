@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>JavaScript Search App Using WikiAPI</title>
+    <!-- CSS Files here  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS Files here  -->
+    <script src="./js/app.js" type="module"></script>
+ 
+</head>
+<body>
+
+    <main>
+        <h1 class="offScreen">Search App powered by Wikipedia Engine</h1>
+
+        <section class="searchEntry">
+
+            <h2 class="offscreen">Search Term Entry</h2>
+
+            <div class="logo" aria-hidden="true">
+                <span class="blue">W</span>
+                <span class="red">i</span>
+                <span class="yellow">k</span>
+                <span class="red">i</span>
+                <span class="green">p</span>
+                <span class="yellow">é</span>
+                <span class="red">d</span>
+                <span class="blue">i</span>
+                <span class="yellow">a</span>
+                <span class="blue exclaim">!!</span>
+            </div>
+
+            <form method="GET" action="/aaa" id="searchBox" class="searchBoxx">
+
+                <label for="search" class="offscreen">
+                    Enter a search term
+                </label>
+
+                <input type="text" role="searchingBox" id="search" autocomplete="off">
+
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search box">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <button id="searchBtn" class="button searchBtn" type="submit" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="results">
+            
+            <h2 class="offscreen">Search Results</h2>
+
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+
+            <div class="searchResults" id="searchResults">
+
+                <!-- <div class="resultItem">
+
+                    <div class="resultTitle">
+                        <a href="" >Malinois</a>
+                    </div>
+
+                    <div class="resultContent">
+
+                        <div class="resultImage">
+                            <img src="./berger.jpg" alt="Malinois" width="100">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">
+                                Lorem doloribus Lorem doloribus rerum, suscipit odio quisquam voluptatem dolore quidem unde facere? rerum, suscipit odio quisquam voluptatem dolore quidem unde facere?
+                            </p>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span> Search App By <a href="https://www.mediawiki.org/wiki/MediaWiki">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+
+    
+    
+</body>
+</html>

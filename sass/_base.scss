@@ -1,0 +1,84 @@
+$fontFamily: "Montserrat", sans-serif;
+$fontColor: #000;
+$backgroundColor: #fff;
+$statsColor: #4c4c4c;
+$searchBarBorder: #e6e6e6;
+$linkColor: #1a0dab;
+$linkVisitedColor: #609;
+$linkOutlineColor: #000;
+$clearBtnColor: #d9d9d9;
+$blueColor: #0473e6;
+$yellowColor: #ebef09;
+$greenColor: #42ef09;
+$redColor: #f30101d4;
+
+%flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  @extend %flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flexCenter {
+  @extend %flex;
+  justify-content: center;
+}
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 22px;
+  font-family: $fontFamily;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  min-height: 100vh;
+  width: 100vw;
+}
+main {
+  @include flexColumn;
+  min-height: calc(100vh - 60px);
+}
+footer {
+  width: 100%;
+  height: 60px;
+  @include flexCenter;
+
+  p {
+    color: $statsColor;
+    font-size: 0.5rem;
+    @include mq(768px) {
+      font-size: 1rem;
+    }
+    a {
+      color: $statsColor;
+      text-decoration: none;
+    }
+  }
+}
+
+img {
+  display: block;
+}
+h1 {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  padding: 40px 100px;
+  background-color: #fff;
+  z-index: 1;
+}

@@ -1,0 +1,33 @@
+.blue {
+  color: $blueColor;
+}
+.yellow {
+  color: $yellowColor;
+}
+.green {
+  color: $greenColor;
+}
+.red {
+  color: $redColor;
+}
+.exclaim {
+  display: inline-block;
+  font-size: 2.7rem;
+  transform: rotate(12deg);
+  @include mq(768px) {
+    font-size: 5rem;
+  }
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
